@@ -2,8 +2,8 @@
 /*
 Plugin Name: Custom Gravity Admin
 Plugin URI: http://www.pursuitdesign.com
-Description: This removes input types, field groups and settings from the admin form editor in Gravity Forms
-Version: 1.2
+Description: This removes input types, field groups and even more settings from the admin form editor in Gravity Forms
+Version: 1.3
 Author: Pursuit Design
 Author URI: http://www.pursuitdesign.com
 */
@@ -24,6 +24,8 @@ function pd_custom_form_settings($settings) {
 	//remove certain setting fields and field groups
     unset($settings['Form Layout']['css_class_name']);
     unset($settings['Form Options']);
+    unset($settings['Restrictions']);
+    unset($settings['Save and Continue']);
     unset($settings['Form Button']['form_button_conditional']);
 
 	//store, unset, then reset to move field group to the bottom, then hide it
