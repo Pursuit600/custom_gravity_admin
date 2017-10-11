@@ -1,1 +1,1 @@
-# custom_gravity_admin
+Custom Gravity Admin is a plugin for WordPress to be used when the Gravity Forms plugin is in use. This removes input types, field groups and settings from the admin form editor in Gravity Forms. It is useful when you'd like to limit the choices for clients, so as to simplify the interface.
