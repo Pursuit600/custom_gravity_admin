@@ -12,7 +12,7 @@ Author URI: http://www.pursuitdesign.com
 add_filter('gform_form_settings', 'pd_custom_form_settings', 10, 2);
 function pd_custom_form_settings($settings) {
 
-	//rewrite the Label Placement, allowing only Right Aligned, and hide the field
+	//rewrite the Label Placement, allowing only Right Aligned, and hide the field (or switch all to left)
 	$settings['Form Layout']['form_label_placement'] = '
         <tr style="visibility:hidden;height:1px;">
             <th style="height:1px;padding:0;">Label Placement</th>
